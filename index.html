@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/homepage.css">
-    <title>hydrostaticcog</title>
+    <script type='text/JavaScript' src='scripts/alert.js'></script> 
+    <title>Home - hydrostaticcog</title>
     <link rel="shortcut icon" type="image/png" href="assets/hydrostaticcog.png"/>
 </head>
 <body>
-    <div class="alert">
-        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-        <h4>MAIL AND MINECRAFT SERVERS, DISCORD BOTS OFFLINE DUE TO INCLEMENT WEATHER ENERGY BROWNOUTS<br>LEARN MORE AT <a style='text-decoration: none; color: blue;' href='https://status.hydrostaticcog.org/outages/20210215/'>STATUS PAGE</a></h4>
+    <div class="alert" style='display: none' id='alert1'>
+        <h3><span id='alerts'></span><br>Learn more at <span id='alertButton'></span></h3>
     </div>
     <div class='content'>
         <div class='header'>
