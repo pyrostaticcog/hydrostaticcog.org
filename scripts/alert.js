@@ -1,6 +1,6 @@
 let request = new XMLHttpRequest()
 
-request.open('GET', 'http://hydrostaticcog/alert.json', true)
+request.open('GET', 'https://hydrostaticcog/alert.json', true)
 
 request.onload = function() {
     var alertFile = JSON.parse(this.response)
