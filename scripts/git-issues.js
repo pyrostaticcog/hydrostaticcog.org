@@ -11,4 +11,4 @@ gh1request.onload = function () {
 }
 
 // Send request
-request.send()
+gh1request.send()
