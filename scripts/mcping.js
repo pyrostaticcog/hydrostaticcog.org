@@ -2,12 +2,12 @@ const app = document.getElementById('project-2')
 const container = document.createElement('div')
 container.setAttribute('class', 'container')
 
-var request = new XMLHttpRequest()
+var mcrequest = new XMLHttpRequest()
 
 // Open a new connection, using the GET request on the URL endpoint
-request.open('GET', 'https://api.mcsrvstat.us/2/vegasmp.hydrostaticcog.org', true)
+mcrequest.open('GET', 'https://api.mcsrvstat.us/2/vegasmp.hydrostaticcog.org', true)
 
-request.onload = function () {
+mcrequest.onload = function () {
     var data = JSON.parse(this.response)
     if (data.online) {
         if (!data.players.list) {
@@ -26,4 +26,4 @@ request.onload = function () {
 }
 
 // Send request
-request.send()
+mcrequest.send()
