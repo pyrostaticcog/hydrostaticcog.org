@@ -7,6 +7,10 @@ chmod +x rustup.sh
 source ~/.cargo/env
 git clone https://github.com/tazz4843/scripty.git
 git clone https://github.com/tazz4843/deepspeech-rs.git
+cd deepspeech-rs
+git submodule init 
+git submodule update --depth 1
+cd ..
 mkdir ds && cd ds
 wget -O "deepspeech.tar.xz" https://github.com/mozilla/DeepSpeech/releases/download/v0.9.3/native_client.amd64.cpu.linux.tar.xz
 tar xf deepspeech.tar.xz
@@ -18,5 +22,4 @@ cd ..
 mkdir scripty-run
 cp scripty/target/release/scripty scripty-run/scripty
 cd scripty-run
-chmod u+x scripty
 ./scripty
